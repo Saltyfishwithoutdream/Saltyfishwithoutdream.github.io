@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Linux Notebook</title>
+    <link href="/2021/09/21/Linux/"/>
+    <url>/2021/09/21/Linux/</url>
+    
+    <content type="html"><![CDATA[<p>This article is about os: Linux. Because of some reason, I have to learn the  Linux and ROS based on it. </p><span id="more"></span><h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h3 id="shell-amp-bash-amp-终端"><a href="#shell-amp-bash-amp-终端" class="headerlink" title="shell &amp; bash &amp; 终端"></a>shell &amp; bash &amp; 终端</h3><ol><li><p>What is Shell ？</p><p>中文名叫“壳”,是一个处理用户请求的工具或接口，它负责解释用户输入的命令，调用用户希望使用的程序.</p></li><li><p>What is Bash ？</p><p>Bourne Again shell,简称Bash，它是Linux操作系统默认的shell.</p></li><li><p>什么是终端</p><p>当使用图形用户界面时，需要另一种程序与shelI进行交互，这类程序统称为终端.</p></li></ol><h3 id="Linux终端常用指令"><a href="#Linux终端常用指令" class="headerlink" title="Linux终端常用指令"></a>Linux终端常用指令</h3><h4 id="基础常用类"><a href="#基础常用类" class="headerlink" title="基础常用类"></a>基础常用类</h4><p><strong>pwd</strong>                                        当前所在路径</p><p><strong>cd</strong> ..                                         返回上一级目录</p><p>**mkdir+**“文件夹名称”             创建文件夹</p><p><strong>touch</strong>+“文件名称”                 创建文件</p><p><strong>rm</strong>_+“文件名称”                     删除文件</p><p><strong>rmdir</strong>_+“文件名称夹”            删除非空文件夹</p><p><strong>cp</strong>  “文件名称1” “文件名称2”         拷贝文件1后命名为文件2</p><p><strong>cp -r</strong> “文件夹名称1” “文件夹名称2”         拷贝文件夹1后命名为文件夹2</p><p><strong>sudo apt install</strong> +“软件”        下载</p><p><strong>sudo</strong>  <strong>apt remove</strong> + “软件”   卸载</p><h4 id="vim常用命令"><a href="#vim常用命令" class="headerlink" title="vim常用命令"></a>vim常用命令</h4><p>vim/vim+filename 进入vim**(此时为命令模式)**</p><p>输入 <strong>i/a/o键</strong> 进入 <strong>插入模式</strong></p><p>输入 <strong>esc键</strong>    进入 <strong>命令模式</strong></p><p><strong>:q         退出vim</strong></p><p><strong>命令模式常用命令</strong><br>:wq      保存退出<br>:q!        强制退出<br>dd        删除当前行<br>G          快速移动到最后一行<br><strong>插入模式常用快捷键</strong><br>home    键移动到行首<br>end        键移动到行尾</p><p><img src="/2021/09/21/Linux/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F.png"></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Html NoteBook</title>
     <link href="/2021/09/21/html/"/>
     <url>/2021/09/21/html/</url>
