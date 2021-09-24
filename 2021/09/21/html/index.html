@@ -20,7 +20,7 @@
   <meta name="author" content="Salty Fish">
   <meta name="keywords" content="">
   
-  <title>Html NoteBook - 咸鱼-WithoutDream</title>
+  <title>【Html 学习笔记(一)】 标签&amp;&amp;表格 - 咸鱼-WithoutDream</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -247,7 +247,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Html NoteBook">
+            <span class="h2" id="subtitle" title="【Html 学习笔记(一)】 标签&&表格">
               
             </span>
 
@@ -274,7 +274,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.8k 字
+      841 字
     </span>
   
 
@@ -284,7 +284,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      22
+      10
        分钟
     </span>
   
@@ -327,11 +327,11 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Html NoteBook</h1>
+            <h1 style="display: none">【Html 学习笔记(一)】 标签&amp;&amp;表格</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2 天前
+                  本文最后更新于：38 分钟前
                 
               </p>
             
@@ -341,6 +341,19 @@
           </div>
 
 <span id="more"></span>
+
+<style>
+  /* 设置整个页面的字体 */
+  html, body, .markdown-body {
+    font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;
+    font-size: 15px;
+  }
+  /* 只设置 markdown 字体 */
+  .markdown-body {
+    font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;
+    font-size: 15px;
+  }
+</style>
 
 <h1 id="HTML-NoteBook"><a href="#HTML-NoteBook" class="headerlink" title="HTML NoteBook"></a>HTML NoteBook</h1><h2 id="标签关系"><a href="#标签关系" class="headerlink" title="标签关系"></a>标签关系</h2><ol>
 <li>包含关系</li>
@@ -464,58 +477,6 @@
 <ol start="3">
 <li>删除多余单元格</li>
 </ol>
-<h3 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h3><p><strong>列表是用来布局的</strong></p>
-<p><strong>特点</strong> :整洁,自由,有序,根据使用情景划分为三类: 无序列表,有序列表 和 自定义列表</p>
-<h4 id="无序列表-重点"><a href="#无序列表-重点" class="headerlink" title="无序列表(重点)"></a>无序列表(重点)</h4><p>无序列表的基本语法格式如下:</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs css">&lt;<span class="hljs-selector-tag">ul</span>&gt; &lt;<span class="hljs-selector-tag">ul</span>&gt;标签表示<span class="hljs-selector-tag">HTML</span>页面中项目的无序列表<br>&lt;<span class="hljs-selector-tag">li</span>&gt;列表项 <span class="hljs-number">1</span> &lt;/<span class="hljs-selector-tag">li</span>&gt; &lt;<span class="hljs-selector-tag">li</span>&gt;列表项用&lt;<span class="hljs-selector-tag">li</span>&gt;定义<br>&lt;<span class="hljs-selector-tag">li</span>&gt;列表项 <span class="hljs-number">2</span> &lt;/<span class="hljs-selector-tag">li</span>&gt;<br>&lt;<span class="hljs-selector-tag">li</span>&gt;&lt;<span class="hljs-selector-tag">p</span>&gt;列表项&lt;/<span class="hljs-selector-tag">p</span>&gt; &lt;/<span class="hljs-selector-tag">li</span>&gt;<br>...<br>&lt;/<span class="hljs-selector-tag">ul</span>&gt;<br>注意点:<br></code></pre></td></tr></table></figure>
-<ol>
-<li>&lt; ul &gt;中只能嵌套&lt; li &gt;</li>
-<li>&lt; li&gt;和&lt;/ li&gt;之间可以容纳所有元素</li>
-<li>无序列表使用时常用CSS来设置样式</li>
-</ol>
-<h4 id="有序列表-理解"><a href="#有序列表-理解" class="headerlink" title="有序列表(理解)"></a>有序列表(理解)</h4><p>有序列表即为排列有序的列表,列表项按一定顺序排列</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs xml">在HTML标签中,<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>标签用于定义有序列表,列表排序以数字来显示<br><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>标签来定义列表项<br>使用格式如下:<br><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项 1 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项 2 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>...<br><span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span><br></code></pre></td></tr></table></figure>
-<h4 id="自定义列表-重点"><a href="#自定义列表-重点" class="headerlink" title="自定义列表(重点)"></a>自定义列表(重点)</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs xml">在HTML标签中,<span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>标签用于定义列表<br>与<span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>(定义项目/名字),和<span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>(描述每一个项目/名字)一起使用<br>基本语法如下:<br><span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>名词<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>名词解释 1 <span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>名词解释 2 <span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span><br>...<br><span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h2><p>在HTML中,表单由 <strong>表单域 、 表单元素 和 提示信息</strong> 3 个部分组成。</p>
-<p><img src="/2021/09/21/html/number12.png" srcset="/img/loading.gif" lazyload></p>
-<h4 id="表单域"><a href="#表单域" class="headerlink" title="表单域"></a>表单域</h4><p><strong>表单域</strong> 是包含表单元素的区域</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>用于定义表单域,实现用户信息的传递和收集。<br><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>会把它范围内的表单元素信息提交给服务器。<br>基本语法如下:<br><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;url&quot;</span><span class="hljs-attr">method</span>=<span class="hljs-string">&quot;提交方式&quot;</span><span class="hljs-attr">name</span>=<span class="hljs-string">&quot;表单域名称&quot;</span>&gt;</span><br>各种表单元素<br><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span><br></code></pre></td></tr></table></figure>
-<p><img src="/2021/09/21/html/number13.png" srcset="/img/loading.gif" lazyload></p>
-<h4 id="表单元素"><a href="#表单元素" class="headerlink" title="表单元素"></a>表单元素</h4><p>表单元素就是允许用户在表单中输入或者选择的内容控件。</p>
-<p><strong>&lt; input &gt;输入表单元素</strong></p>
-<p>&lt; input &gt;用于收集用户信息,包含一个 type 属性,输入字段有很多种形式(可以是 <strong>文本字段、复选框、单选按钮</strong> 等)</p>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs lua">语法格式:<br>&lt;<span class="hljs-built_in">input</span> <span class="hljs-built_in">type</span>=<span class="hljs-string">&quot;属性值&quot;</span> /&gt;<br></code></pre></td></tr></table></figure>
-
-<p><img src="/2021/09/21/html/number14.png" srcset="/img/loading.gif" lazyload></p>
-<p>&lt; input &gt;标签除了type以外,还有其他属性:</p>
-<p><img src="/2021/09/21/html/number15.png" srcset="/img/loading.gif" lazyload></p>
-<p>注意点如下:</p>
-<ol>
-<li><p>name是表单元素名称, 要求单选框和复选框有相同的name值</p>
-<p>p.s:name和value主要给后台人员使用</p>
-</li>
-<li><p>单选按钮和复选框可以设置checked属性,checked=”checked”</p>
-</li>
-</ol>
-<p><strong>页面打开时默认选中这个按钮 (不过现在好像改手动了,协议要求)</strong></p>
-<p><strong>&lt; label &gt;标签(input的补充)</strong></p>
-<p>&lt; label &gt;标签用于绑定一个表单元素,当点击&lt; label &gt;标签内的文本时,浏览器就会自动将焦点(光标)转移到表单元素上。 <strong>用来提升用户体验</strong></p>
-<p><img src="/2021/09/21/html/number16.png" srcset="/img/loading.gif" lazyload></p>
-<p>P.s:&lt; label &gt;标签的for属性与相关元素的id属性必须相同</p>
-<p><strong>&lt; select &gt;下拉表单元素</strong></p>
-<p>在页面中，如果有多个选项让用户选择，并且想要节约页面空间时，可以使用 &lt; select &gt;标签控件</p>
-<p>定义 <strong>下拉列表</strong> 。</p>
-<p><img src="/2021/09/21/html/number17.png" srcset="/img/loading.gif" lazyload></p>
-<p>Tips: &lt; option &gt;中定义selected=”selected”时,当前项即为默认选项</p>
-<p>(有点类似之前的那个checked=”checked”)</p>
-<p><strong>&lt; textarea &gt;文本域元素</strong></p>
-<p>&lt; textarea &gt;标签用于定义多行文本输入,常见于 <strong>留言板，评论</strong> 。</p>
-<h6 id="语法"><a href="#语法" class="headerlink" title="语法:"></a>语法:</h6><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">&quot; 3 &quot;</span> <span class="hljs-attr">cols</span>=<span class="hljs-string">&quot; 20 &quot;</span>&gt;</span><br>文本内容<br><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span><br></code></pre></td></tr></table></figure>
-<p>cols=“每行中的字符数”，rows=“显示的行数”。(没必要记住)</p>
-<p><strong>我们在实际开发中不会使用 ， 都是用CSS来改变大小 。</strong></p>
-<h2 id="查阅文档-参考资料"><a href="#查阅文档-参考资料" class="headerlink" title="查阅文档(参考资料)"></a>查阅文档(参考资料)</h2><p>W3C:<a target="_blank" rel="noopener" href="http://www.w3school.com/cn/">http://www.w3school.com/cn/</a></p>
-<p>MDN:<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh_CN/">https://developer.mozilla.org/zh_CN/</a></p>
 
             </div>
             <hr>
