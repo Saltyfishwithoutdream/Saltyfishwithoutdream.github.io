@@ -154,6 +154,56 @@
   
   
   <entry>
+    <title>【Python 学习笔记(一)】 基础</title>
+    <link href="/2021/09/21/python/"/>
+    <url>/2021/09/21/python/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-success">            <p>The article is about os: Linux. Because of some reason, I have to learn the  Linux and ROS based on it. </p>          </div><span id="more"></span><style>  /* 设置整个页面的字体 */  html, body, .markdown-body {    font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }  /* 只设置 markdown 字体 */  .markdown-body {    font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }</style><h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h3 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h3><ol><li><p>**ord ( )**可以把字符转换为对应的Unicode 码</p><p>（ASCII码是Unicode的子集）</p></li><li><p><strong>’’’ ‘’’</strong>可以用来定义长字符串</p></li><li><p>Print（“ ”，end=” ”）</p><p>解释：print调用的时候默认以换行符结尾，end可以替代换行符</p></li><li><p><strong>Str（）函数</strong>，将数字（or布尔值True or False）转化为字符串</p></li><li><p><strong>X.replace</strong>(‘字符1’，‘字符2’)</p><p>X为目标字符串，用字符2代替字符1</p></li><li><p><strong>[：：-1] 步长为负</strong>，从右到左反向提取</p></li><li><p><strong>列表逆序</strong><br>sorted(x[,reverse=True])  无方框中内容则正序排列 </p></li><li><p>**split( ):**基于指定分隔符将字符串分割成多个子字符串</p><p>( )括号中所填写即为指定分隔符</p></li></ol><p>​    <em><strong>Eg：</strong></em><strong>A.split(*)</strong> 基于*分割字符串A</p><p>​    Join()作用与split相反，用于将一系列子字符串连接起来，用法相同</p><p>​    <em><strong>Eg：</strong></em><strong>‘x’.Join(A)</strong> 基于*连接多个子字符串A，A为储存多个字符串的链表</p><p>​    <strong>Subtitle one：</strong>字符串统计常用函数</p><ol start="9"><li><p><strong>a.startswith(‘x’)</strong> 判断是否以指定字符串X开头</p></li><li><p>a.endswith(‘x’) 判断是否以指定字符串X结尾</p></li><li><p><strong>a.find(‘x’) ：</strong>第一次出现指定字符串x的位置</p></li><li><p><strong>a.rfind(‘x’)：</strong>最后一次出现指定字符串x的位置</p></li><li><p><strong>a.count(‘x’)：</strong>指定字符（串）出现的次数</p><p>Subtitle two:字符串去除函数</p></li><li><p>**strip( ):**去除字符串首尾指定信息</p></li></ol><p>​    **Istrip( ):**去除字符串左边指定信息</p><p>​    **rstrip( ):**去除字符串右边指定信息</p><ol start="15"><li>大小写转换<br>编程中关于字符串大小写转换的情况，经常遇到。为了方便学习，<em><strong>先设定一个测试变量</strong></em>︰<pre><code>                            **a = &quot;gaoqilove programming, love sXT&quot;**</code></pre></li></ol><table><thead><tr><th>示例</th><th>说明</th><th>结果</th></tr></thead><tbody><tr><td>a.capitalizeo</td><td>产生新的字符串,首字母大写</td><td>‘Gaoqi love programming,love sxt’</td></tr><tr><td>a.titleo</td><td>产生新的字符串,每个单词都首字母大写</td><td>‘GaoqiLove Programming.Love sxt’</td></tr><tr><td>a.uppero</td><td>产生新的字符串,所有字符全转成大写</td><td>‘GAoQILOVE PROGRAMMING,LOVE sxT</td></tr><tr><td>a.lowero</td><td>产生新的字符串,所有字符全转成小写</td><td>‘gaoqi love programming, love sxt’</td></tr><tr><td>a.swapcaseo</td><td>产生新的,所有字母大小写转换</td><td>‘GAOQILovE PROGRAMMING,LOVE</td></tr></tbody></table><ol start="16"><li><strong>X.center(a,’b’)</strong> ————ljust()左对齐 / rjust()右对齐  </li></ol><h2 id="Math常用库函数"><a href="#Math常用库函数" class="headerlink" title="Math常用库函数"></a>Math常用库函数</h2><p><strong>常用的函数:</strong></p><table><thead><tr><th>函数名称</th><th>作用</th></tr></thead><tbody><tr><td>math.ceil(x)</td><td>向上取整，返回不小于x的最小整数</td></tr><tr><td>math.floor(x)</td><td>向下取整，返回不大于x的最大整数</td></tr><tr><td>math.gcd(a,b)</td><td>返回a、b的最大公约数，比循环递归快</td></tr><tr><td>math.factorial(x)</td><td>返回x的阶乘x! x小于0或者是小数报错</td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>Python学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>【Python 学习笔记(二)】 列表&amp;元组</title>
+    <link href="/2021/09/21/python2/"/>
+    <url>/2021/09/21/python2/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-success">            <p>The article is about  Python. I write down this notebook in my college’s first year, maybe it is too basic for the reader.  </p>          </div><span id="more"></span><style>  /* 设置整个页面的字体 */  html, body, .markdown-body {    font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }  /* 只设置 markdown 字体 */  .markdown-body {    font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }</style><h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h3 id="列表-list"><a href="#列表-list" class="headerlink" title="列表(list)"></a>列表(list)</h3><ol><li><p>使用推导式可以创建列表，例：</p><p>a = [x×2for x in range(5)]        #循环创建多个元素<br>a    [O，2,4，6,8]<br>a =[x×2 for x in range(100)     if x%9==0]    #通过if 过滤元素a[0,18,36,54,72,90,108,126,144,162,180,198]</p></li><li><p>x=list(range())嵌套创建列表较常用（list函数将目标转化为列表 形式）</p></li></ol><h4 id="列表元素增加和删除"><a href="#列表元素增加和删除" class="headerlink" title="列表元素增加和删除"></a>列表元素增加和删除</h4><ol><li><p>x.append（a）——在x列表尾部添加元素x</p></li><li><p>x.extend（a）——在x列表尾部添加元素x（此函数可添加系列元素，与append只能添加部分不同）</p></li></ol><p><em><strong>Attention:</strong></em></p><ol start="3"><li><p>x.insert（y，a）——在x列表y处添加元素a，后续元素后挪</p></li><li><p>del x[y]——在x列表中删除除去y号元素，后续元素前挪</p></li><li><p>x.pop(y) 删除y号元素并返回指定元素，默认末尾元素</p></li></ol><h4 id="列表元素搜索"><a href="#列表元素搜索" class="headerlink" title="列表元素搜索"></a>列表元素搜索</h4><ol><li><p>x.index(value,[start,[end]]) ——函数可以换取元素value首次出现的索引位置，其中start与end可指定，默认从0开始</p></li><li><p>x.count(value) ——获得指定元素在列表中出现次数（不在则返回0）——但一般使用更简洁的in</p><p>Eg： a （not）in x  如果x列表中存在a返回true，not判断是否不在</p></li></ol><h4 id="列表排序"><a href="#列表排序" class="headerlink" title="列表排序"></a>列表排序</h4><ol><li><p>x.sort()——直接对列表x排序，默认升序</p><p>  x.sort(reverse=True) 则与之对应，为降序排列</p></li><li><p>import.random </p><p>random.shuffle(x)——调用函数库，将x随机打乱排序</p></li></ol><h3 id="元组-tuple"><a href="#元组-tuple" class="headerlink" title="元组(tuple)"></a>元组(tuple)</h3><table><thead><tr><th>操作函数或方法</th><th>描述</th></tr></thead><tbody><tr><td>S.add(x)</td><td>如果x不在集合S中，将x增加到S</td></tr><tr><td>s.discard(x)</td><td>移除S中元素x，如果x不在集合S中，不报错</td></tr><tr><td>S.remove(x)</td><td>移除S中元素x，如果x不在集合S中，产生KeyError异常</td></tr><tr><td>s.clear()</td><td>移除S中所有元素</td></tr><tr><td>s.pop()</td><td>随机返回S的一个元素，更新S，若S为空产生KeyError异常</td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>Python学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>【Html 学习笔记(一)】 标签&amp;&amp;表格</title>
     <link href="/2021/09/21/html/"/>
     <url>/2021/09/21/html/</url>
