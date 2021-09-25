@@ -20,7 +20,7 @@
   <meta name="author" content="Salty Fish">
   <meta name="keywords" content="">
   
-  <title>【Ubuntu 学习笔记(一)】 - 咸鱼-WithoutDream</title>
+  <title>【MATLAB 学习笔记(一)】 矩阵&amp;字符串&amp;数据统计函数&amp;多项式 - 咸鱼-WithoutDream</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -247,7 +247,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="【Ubuntu 学习笔记(一)】">
+            <span class="h2" id="subtitle" title="【MATLAB 学习笔记(一)】 矩阵&字符串&数据统计函数&多项式">
               
             </span>
 
@@ -262,8 +262,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-09-20 22:55" pubdate>
-        2021年9月20日 晚上
+      <time datetime="2021-09-25 00:14" pubdate>
+        2021年9月25日 凌晨
       </time>
     </span>
   
@@ -274,7 +274,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      846 字
+      1k 字
     </span>
   
 
@@ -284,7 +284,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      10
+      12
        分钟
     </span>
   
@@ -327,7 +327,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">【Ubuntu 学习笔记(一)】</h1>
+            <h1 style="display: none">【MATLAB 学习笔记(一)】 矩阵&amp;字符串&amp;数据统计函数&amp;多项式</h1>
             
               <p class="note note-info">
                 
@@ -355,152 +355,100 @@
   }
 </style>
 
-<h1 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h1><ul>
-<li><strong>什么是Ubuntu</strong></li>
-</ul>
-<p>Ubuntu（友帮拓、优般图、乌班图)是一个以桌面应用为主的开源GNU/Linux操作系统，<strong>Ubuntu是基于GNU/Linux</strong>，支持x86、amd64(即x64)和pp架构，由全球化的专业开发团队(Canonical Ltd)打造的。<strong>专业的Python开发者一般会选择Ubuntu 这款Linux系统作为生产平台.</strong></p>
-<ul>
-<li><strong>Ubuntu下各文件介绍</strong></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>文件名称</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>bin</td>
-<td>所有用户都可以使用的、基本的命令</td>
-</tr>
-<tr>
-<td>boot</td>
-<td>启动文件，比如内核等</td>
-</tr>
-<tr>
-<td>dev</td>
-<td>设备文件，Linux特有的</td>
-</tr>
-<tr>
-<td>etc</td>
-<td>配置文件</td>
-</tr>
-<tr>
-<td>home</td>
-<td>家目录</td>
-</tr>
-<tr>
-<td>book</td>
-<td>用户book的家目录</td>
-</tr>
-<tr>
-<td>lib</td>
-<td>库</td>
-</tr>
-<tr>
-<td>media</td>
-<td>插上u盘等外设时会挂载到该目录下</td>
-</tr>
-<tr>
-<td>mnt</td>
-<td>用来挂载其他文件系统</td>
-</tr>
-<tr>
-<td>opt</td>
-<td>Optional，可选的程序</td>
-</tr>
-<tr>
-<td>proc</td>
-<td>用来挂载虚拟的proc文件系统，可以查看各进程(process)的信息</td>
-</tr>
-<tr>
-<td>root</td>
-<td>root用户的家目录</td>
-</tr>
-<tr>
-<td>sbin</td>
-<td>基本的系统命令，系统管理员才能使用</td>
-</tr>
-<tr>
-<td>sys</td>
-<td>用来挂载虚拟的sys文件系统，可以查看系统信息:比如设备信息</td>
-</tr>
-<tr>
-<td>tmp</td>
-<td>临时目录,存放临时文件</td>
-</tr>
-<tr>
-<td>bin</td>
-<td>绝大部分的用户可使用指令都放在这里(与开机无关)，/bin中的命令跟开机有关</td>
-</tr>
-<tr>
-<td>games</td>
-<td>游戏</td>
-</tr>
-<tr>
-<td>include</td>
-<td>头文件</td>
-</tr>
-<tr>
-<td>lib</td>
-<td>库</td>
-</tr>
-<tr>
-<td>local</td>
-<td>系统管理员在本机自行安装、下载的软件</td>
-</tr>
-<tr>
-<td>sbin</td>
-<td>非系统正常运作所需要的系统命令</td>
-</tr>
-<tr>
-<td>share</td>
-<td>放置共享文件的地方，比如/usr/share/man里存放帮助文件</td>
-</tr>
-<tr>
-<td>src</td>
-<td>源码</td>
-</tr>
-<tr>
-<td>var</td>
-<td>主要针对常态性变动的文件，包括缓存(cache)、 log文件等</td>
-</tr>
-</tbody></table>
-<ul>
-<li><strong>Linux的文件管理</strong></li>
-</ul>
-<p>我们知道Linux的目录结构为树状结构，最顶级的目录为根目录 /。其他目录通过挂载可以将它们添加到树中，通过解除挂载可以移除它们。（Linux的基本思想：一切皆文件）其中两个比较重要的概念：</p>
-<p>♦ <strong>绝对路径：</strong><br>路径的写法，由根目录 <strong>/</strong> 写起，例如： /usr/share/doc 这个目录。</p>
-<p>♦ <strong>相对路径：</strong><br>路径的写法，不是由 <strong>/</strong> 写起，例如由 /usr/share/doc 要到 /usr/share/man 底下时，可以写成： <strong>cd ../man</strong> 这就是相对路径的写法。</p>
-<h3 id="可执行脚本"><a href="#可执行脚本" class="headerlink" title="可执行脚本"></a>可执行脚本</h3><p> 脚本Script ，<strong>一种解释执行的程序</strong><br>Linux下常见的三种脚本程序:</p>
-<ul>
-<li><p><em>Shell**脚本</em></p>
+<h3 id="矩阵元素的引用方式（MATLAB矩阵按列储存）"><a href="#矩阵元素的引用方式（MATLAB矩阵按列储存）" class="headerlink" title="矩阵元素的引用方式（MATLAB矩阵按列储存）"></a>矩阵元素的引用方式（MATLAB矩阵按列储存）</h3><ol>
+<li><p>通过下标引用</p>
+<p>矩阵按列分配序号</p>
 </li>
-<li><p><em>Perl**脚本</em></p>
+<li><p>通过序号来引用</p>
+<p>矩阵元素的序号和下标利用sub2ind和ind2sub函数</p>
 </li>
-<li><p><em>Python脚本</em></p>
-</li>
-</ul>
-<p>Tips:<strong>脚本程序本质是一个具有可执行权限的文本文件</strong></p>
-<p>脚本程序都是由解释器来执行的.</p>
-<ul>
-<li>Shell脚本解释器:/bin/sh</li>
-<li>Perl脚本解释器:/bin/perl</li>
-<li>Python脚本解释器:/bin/python3</li>
-</ul>
-<h3 id="Shell脚本"><a href="#Shell脚本" class="headerlink" title="Shell脚本"></a>Shell脚本</h3><p> Shell脚本，按Shell的语法写出来的脚本是Linux自带的脚本语言,相当于Windows下的 DOS批处理脚本</p>
-<p><strong>要点与细节</strong></p>
-<ol>
-<li>第一行必须声明解释器# !/bin/sh</li>
-<li>必须有x权限，才能够执行<br>比如，一个程序只有作者执行，别人不能执行<br>rwXr-—r–</li>
-<li>执行程序时，必须加上路径./ hello.sh<br>/home /shaofa/hello.sh</li>
 </ol>
-<p>Python脚本</p>
-<ol>
-<li>编辑一个文本文件,保存为hello.py</li>
-<li>添加可执行权限<br>chmod +xhello.py</li>
-<li>执行程序<br>./hello.py</li>
+<p><strong>此处说明sub2ind函数用法：将下标转化为序号</strong></p>
+<p>​    e.g:  D=sub2ind（size（a），[i元素的行]，[j元素的列]）</p>
+<p>​         （a为矩阵，每一对i，j对应a中元素的序号-不是元素）</p>
+<ol start="3">
+<li><p>利用空矩阵[ ]可以删除矩阵中的元素</p>
+</li>
+<li><p><strong>reshape函数</strong>——reshape（A，m，n）</p>
+<p>在总元素不变的前提下，将矩阵重新排成m*n的矩阵</p>
+</li>
 </ol>
+<p>​    （函数用法可通过‘help+函数名（function）’查询）</p>
+<p><strong>Ps：MATLAB的点运算指它们的对应元素进行相关运算，要求两个矩阵同型</strong></p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ol>
+<li><p><strong>find函数</strong>可以找出元素在集合中的位置并返回值</p>
+</li>
+<li><p><strong>eval函数</strong>把参数字符串中的内容作为对应的MATLAB命令来执行</p>
+</li>
+<li><p><strong>abs函数和double函数</strong>都可以用来获取字符串矩阵对应的ASCII码数值矩阵</p>
+<p><strong>char函数</strong>是把ASCII码转化为字符串矩阵</p>
+</li>
+<li><p><strong>strcmp（x,y）</strong>比较是否相等，而strcmpi是在忽略字母大小写前提下，比较是否相等。</p>
+</li>
+<li><p><strong>findstr（s1，s2）</strong>返回短字符串在长字符串中的开始位置</p>
+</li>
+<li><p><strong>strrep（s1，s2，s3）</strong>将s1中所有子字符串s2替换为s3</p>
+</li>
+</ol>
+<h3 id="矩阵的数据统计分析"><a href="#矩阵的数据统计分析" class="headerlink" title="矩阵的数据统计分析"></a>矩阵的数据统计分析</h3><ol>
+<li><p>mean（）：算术平均值</p>
+</li>
+<li><p>median（）：求中值</p>
+</li>
+<li><p>sum（）：求和函数</p>
+</li>
+<li><p>max/min（）：生成一个行向量，每个代表一列最大值</p>
+</li>
+<li><p>prod（）：求积函数</p>
+</li>
+<li><p>cumsum（）:累加和函数（第i个元素为前i个元素的和）</p>
+</li>
+<li><p>cumprod（）：累乘积函数（第i个元素为前i个元素的积）</p>
+</li>
+<li><p>std（A，flag，dim）：计算标准差函数，flag（取0或1）决定调用两种公式的哪一种计算，dim决定按列算还是按行算</p>
+</li>
+<li><p>corrcoef（A）：相关系数函数，返回矩阵A所形成的一个相关系数矩阵，其中第i行第j列表示原矩阵第i列和第j列的相关系数</p>
+</li>
+<li><p>sort（）；a.排序函数,对向量x按升序排列</p>
+<p> b.[Y,I]=sort(A,dim,mode)</p>
+</li>
+</ol>
+<p><em><strong>注释：</strong></em>其中，dim指明对A的列还是行进行排序，默认为列，mode指明按升序还是降序排序，若取“ascend” ，则按升序;若取“descend” ，则按降序，默认为升序。输出参数中，Y是排序后的矩阵，而I记录Y中的元素在A中位置，即第几列。</p>
+<h3 id="多项式计算："><a href="#多项式计算：" class="headerlink" title="多项式计算："></a>多项式计算：</h3><p>（MATLAB中n次多项式用长度为n+1的系数行向量（从0到n）表示，系数为按次从高到低）</p>
+<ol>
+<li><p><strong>conv（p1，p2）：</strong>多项式相乘函数</p>
+</li>
+<li><p><strong>[Q,r]=deconv(PI,P2) :</strong> 多项式相除函数。</p>
+<p>其中，Q返回多项式P1除以P2的商式，r返回P1除以P2的余式。Q和r仍是多项式系数向量。</p>
+<p>deconv是conv的逆函数，因此有P1=conv(Q, P2)+r</p>
+</li>
+<li><p>polyder():多项式求导函数。</p>
+<p>调用格式:</p>
+<p>​    (1) p=polyder(P):求多项式P的导函数。</p>
+<p>​    (2) p=polyder(P,Q):求P . Q的导函数。</p>
+<p>​    (3) [p,q]=polyder(P,Q): 求P/Q的导函数，导函数的分子存入p，分母存入q。 </p>
+</li>
+<li><p>polyval（p,x)</p>
+<p>其中，p为多项式系数向量; x可以是标量、向量或矩阵。若x为标量，则求多项式在该点的值;若x为向量或矩阵，则对向量或矩阵中的每个元素求多项式的值。</p>
+</li>
+<li><p>polyvalm(p,x)</p>
+<p>其调用格式与polyval相同，但含义不同。</p>
+<p><strong>polyvalm函数</strong>要求x为方阵，以方阵为自变量求多项式的值。</p>
+<p>设A为方阵，P代表多项式</p>
+<ul>
+<li><p>**polyvalm(P,A)**的含义是:</p>
+<p>AxAxA- 5xAxA+8*eye(size(A)) [矩阵运算 ]</p>
+</li>
+<li><p>而**polyval(P,A)**的含义是:</p>
+<p>A. xA.xA-5xA.xA+8*ones(size(A)) [点运算]</p>
+</li>
+</ul>
+</li>
+<li><p>多项式求根函数：roots（p）[p仍为多项式系数向量]</p>
+<p>此函数与poly（x）函数相逆，x为多项式的根，可求出原多项式</p>
+</li>
+</ol>
+<p>​     </p>
 
             </div>
             <hr>
@@ -510,7 +458,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Linux%E5%AD%A6%E4%B9%A0/">Linux学习</a>
+                      <a class="hover-with-bg" href="/categories/MATLAB%E5%AD%A6%E4%B9%A0/">MATLAB学习</a>
                     
                   </div>
                 
@@ -518,7 +466,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Linux/">Linux</a>
+                      <a class="hover-with-bg" href="/tags/MATLAB/">MATLAB</a>
                     
                   </div>
                 
@@ -535,9 +483,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/09/21/Linux/">
+                      <a href="/2021/09/25/MATLAB2/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">【Linux 学习笔记(一)】 概念及基础命令</span>
+                        <span class="hidden-mobile">【MATLAB 学习笔记(二)】 数据插值&曲线拟合&数值微积分&线性方程组</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -545,8 +493,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/09/21/English-Speaking/">
-                        <span class="hidden-mobile">【听说读写(一)】 常用习语</span>
+                      <a href="/2021/09/24/html2/">
+                        <span class="hidden-mobile">【Html 学习笔记(二)】 列表&&表单</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
