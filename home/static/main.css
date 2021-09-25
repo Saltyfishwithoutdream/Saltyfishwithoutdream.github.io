@@ -269,7 +269,7 @@ transition:all .5s;
 transform:rotate(360deg);
 -ms-transform:rotate(360deg); 	/* IE 9 */
 -moz-transform:rotate(360deg); 	/* Firefox */
--webkit-transform:rotate(360deg); /* Safari 鍜� Chrome */
+-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
 -o-transform:rotate(350deg); 	/* Opera */
 }
 
