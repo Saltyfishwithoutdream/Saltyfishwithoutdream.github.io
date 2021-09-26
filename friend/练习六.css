@@ -86,7 +86,7 @@ a {
     height: 42px;
     /* 按钮button默认有个边框需要我们手动去掉 */
     border: 0;
-    background: url(image/btn.png);
+    background: url(btn.png);
 }
 .user {
     float: right;
@@ -108,7 +108,7 @@ a {
 
 .box .w{
     height: 460px;    
-    background: url(image/王者荣耀.jpg) no-repeat top center;
+    background: url(王者荣耀.jpg) no-repeat top center;
 }
 /* 第一个盒子左边的盒子 */
 .left{
