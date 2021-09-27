@@ -198,7 +198,7 @@ li > a:only-child:after {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background: url(../images/banner-1.jpg) no-repeat bottom;
+	background: url(index/banner-1.jpg) no-repeat bottom;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
