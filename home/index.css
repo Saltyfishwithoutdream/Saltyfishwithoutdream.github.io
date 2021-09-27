@@ -1,0 +1,87 @@
+#rin-main {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: calc(50vh - 200px);
+}
+@media (max-width: 600px){
+    #rin-main {
+        width: 95%;
+    }
+}
+
+/* 头像调控 */
+#rin-headimg{
+    background-image: url('https://z3.ax1x.com/2021/09/27/4g2NKx.png');
+    border-radius: 50%;
+    height: 150px;
+    width:150px;
+    margin: auto;
+    cursor: pointer;
+    background-size: cover;
+    border: 3px solid gray;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.55);
+    -webkit-transition: 0.4s;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+}
+
+#rin-headimg:hover{
+    -webkit-transform: rotateZ(360deg);
+    transform:rotate(360deg) scale(1.2);
+}
+.rin-name{
+    margin-top: 20px;
+    color:white;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
+}
+.rin-description{
+    color:white;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    letter-spacing:8px;
+}
+
+.rin-btn
+{
+    font-size:x-large;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2196f3;
+    font-weight: 500;
+    transition: all .3s;
+    text-decoration: none;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.568);
+}
+a:hover{
+    width: 120%;
+    color:white;
+    margin-top: 10px;
+    color: #fff;
+	border-radius: 5px;
+	background-color: #03e9f4;
+	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+		0 0 100px #03e9f4;
+}
+
+.rin-tr {
+    width: 80%;
+    height: 2px;
+    margin: auto;
+    background: rgba(255,255,255,.3);
+}
+
+.rin-tr2 {
+    width: 20%;
+    height: 2px;
+    margin: auto;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.87);
+}
+
