@@ -2,7 +2,7 @@
 <html lang="zxx">
 <head>
     <title>Website for my friends</title>
-    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content>
     <script>
@@ -11,21 +11,24 @@
         }, false);
         function hideURLbar() {
             window.scrollTo(0, 1);
-        } 
-</script>
-    <link href="bootstrap.css" type="text/css" rel="stylesheet" media="all">
-    <link href="css.css" type="text/css" rel="stylesheet" media="all">
-     <link rel="icon" href="https://z3.ax1x.com/2021/09/27/4g2NKx.png">
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/test2.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="icon" href="https://z3.ax1x.com/2021/09/27/4g2NKx.png">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
 </head>
+    <!------------------------------------ 侧边栏 ----------------------------->
 <body>
     <div class="sidenav">
         <div class="side_top">
-            <img src="/friend/index/郑老师2.png" alt="news image" class="img-fluid navimg">
+            <img src="images/郑老师2.png" alt="news image" class="img-fluid navimg">
             <h1> This is a website built for my friends<br>Just for Entertainment, No offense.</h1>
         </div>
+        <!-- header -->
         <header>
-            <div class="container-fluid px-lg-5 ">
+            <div class="container-fluid">
                 <nav class="mnu mx-auto">
                     <label for="drop" class="toggle">Menu</label>
                     <input type="checkbox" id="drop">
@@ -48,182 +51,197 @@
                     <h2> This is a website built for my friends
                     <br>Just for Entertainment, No offense.</h2>
                     <p class="banp mt-5">本人学习了一段时间的前端,水平有限,只能修改别人写好的模板。<br>此网站仅用来记录好友的一点信息,无意冒犯。</p>
-                    <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#services" role="button">Learn More</a>
+                    <a class="btn btn-primary agile-link-bnr" href="#services" role="button">Learn More</a>
                 </div>
             </div>
         </div>
+         <!-- Gallery -->
     <section class="gallery" id="gallery">
         <div class="container py-lg-5">
            <h3 class="w3_head mb-5">Their Photos</h3>
              <div class="row news-grids mt-lg-5 mt-4 text-center">
                 <div class="col-md-6 gal-img">
-                    <a href="#gal1"><img src="/friend/index/王老师1.jpg" alt="news image" class="img-fluid"></a>
+                    <a href="#gal1"><img src="images/王老师1.jpg" alt="news image" class="img-fluid"></a>
                 </div>
                 <div class="col-md-6 proj-1 gal-img">
-                    <a href="#gal2"><img src="/friend/index/王老师2.jpg" alt="news image" class="img-fluid"></a>
+                    <a href="#gal2"><img src="images/王老师1.jpg" alt="news image" class="img-fluid"></a>
                 </div>
                 <div class="col-md-6 mt-5 gal-img">
-                    <a href="#gal3"><img src="/friend/index/王老师3.jpg" alt="news image" class="img-fluid"></a>
+                    <a href="#gal3"><img src="images/王老师1.jpg" alt="news image" class="img-fluid"></a>
                 </div>
                 <div class="col-md-6 mt-5 gal-img">
-                    <a href="#gal4"><img src="/friend/index/王老师4.jpg" alt="news image" class="img-fluid"></a>
+                    <a href="#gal4"><img src="images/王老师1.jpg" alt="news image" class="img-fluid"></a>
                 </div>
                 <div class="col-md-6 mt-5 gal-img">
-                    <a href="#gal5"><img src="/friend/index/郑老师.png" alt="news image" class="img-fluid"></a>
+                    <a href="#gal5"><img src="images/王老师1.jpg" alt="news image" class="img-fluid"></a>
                 </div>
                 <div class="col-md-6 mt-5 gal-img">
-                    <a href="#gal6"><img src="/friend/index/郑老师2.jpg" alt="news image" class="img-fluid"></a>
+                    <a href="#gal6"><img src="images/王老师1.jpg" alt="news image" class="img-fluid"></a>
                 </div>
             </div>
         </div>
+        <!-- popup-->
         <div id="gal1" class="pop-overlay animate">
             <div class="popup">
-                <img src="/friend/index/王老师1.jpg" alt="Popup Image" class="img-fluid">
+                <img src="images/王老师1.jpg" alt="Popup Image" class="img-fluid">
                 <p class="mt-4">王老师的靓照1号</p>
                 <a class="close" href="#gallery">&times;</a>
             </div>
         </div>
+        <!-- popup-->
         <div id="gal2" class="pop-overlay animate">
             <div class="popup">
-                <img src="/friend/index/王老师2.jpg" alt="Popup Image" class="img-fluid">
+                <img src="images/王老师2.jpg" alt="Popup Image" class="img-fluid">
                 <p class="mt-4">王老师的靓照2号</p>
                 <a class="close" href="#gallery">&times;</a>
             </div>
         </div>
+        <!-- popup-->
         <div id="gal3" class="pop-overlay animate">
             <div class="popup">
-                <img src="/friend/index/王老师3.jpg" alt="Popup Image" class="img-fluid">
+                <img src="images/王老师3.jpg" alt="Popup Image" class="img-fluid">
                 <p class="mt-4">王老师的靓照3号</p>
                 <a class="close" href="#gallery">&times;</a>
             </div>
         </div>
+        <!-- popup-->
         <div id="gal4" class="pop-overlay animate">
             <div class="popup">
-                <img src="/friend/index/王老师4.jpg" alt="Popup Image" class="img-fluid">
+                <img src="images/王老师4.jpg" alt="Popup Image" class="img-fluid">
                 <p class="mt-4">王老师的靓照4号</p>
                 <a class="close" href="#gallery">&times;</a>
             </div>
         </div>
+        <!-- popup-->
         <div id="gal5" class="pop-overlay animate">
             <div class="popup">
-                <img src="/friend/index/郑老师.jpg" alt="Popup Image" class="img-fluid">
+                <img src="images/郑老师.jpg" alt="Popup Image" class="img-fluid">
                 <p class="mt-4">郑老师的靓照</p>
                 <a class="close" href="#gallery">&times;</a>
             </div>
         </div>
+        <!-- popup-->
         <div id="gal6" class="pop-overlay animate">
             <div class="popup">
-                <img src="/friend/index/郑老师2.jpg" alt="Popup Image" class="img-fluid">
+                <img src="images/郑老师2.jpg" alt="Popup Image" class="img-fluid">
                 <p class="mt-4">郑老师的靓照2号</p>
                 <a class="close" href="#gallery">&times;</a>
             </div>
         </div>
     </section>
+<!-- services -->
             <section class="slide-wrapper" id="services">
                     <div class="services">
                     <h3 class="w3_head mb-5">What You Can Get About Them</h3>
                     <div class="row service_w3top mt-5">
                                 <div class="col-lg-6">
                                     <div class="d-flex services-box">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil"></span>
-                                        </div>
+                                        <!-- .Icon ends here -->
                                         <div class="service-content">
-                                            <h4>王老师的QQ</h4>
+                                            <h4>@王老师的QQ</h4>
                                             <p>
                                                 Click Here.
                                             </p>
-                                        </div>   
+                                        </div>
+                                        <!-- .Service-content ends here -->
                                     </div>
+                                    <!-- .Services-box ends here -->
                                     <div class="d-flex services-box">
-                                        <div class="icon">
-                                            <span class="fa fa-rocket"></span>
-                                        </div>
+                                        <!-- .Icon ends here -->
                                         <div class="service-content">
-                                            <h4>王老师的WX</h4>
+                                            <h4>@王老师的WX</h4>
                                             <p>
                                                 Click Here.
                                             </p>
-                                        </div>                                 
+                                        </div>
+                                        <!-- .Service-content ends here -->
                                     </div>
+                                    <!-- .Services-box ends here -->
                                 </div>
+                                <!-- .Col ends here -->
                                 <div class="col-lg-6">
-                                    <div class="d-flex services-box">
-                                        <div class="icon">
-                                            <span class="fa fa-laptop"></span>
-                                        </div>
+                                    <div class="d-flex services-box">   
+                                        <!-- .Icon ends here -->
                                         <div class="service-content">
-                                            <h4>郑老师的QQ</h4>
+                                            <h4>@郑老师的QQ</h4>
                                             <p>
                                                 Click Here.
                                             </p>
                                         </div>
+                                        <!-- .Service-content ends here -->
                                     </div>
-                                    <div class="d-flex services-box">
-                                        <div class="icon">
-                                            <span class="fa fa-paint-brush"></span>
-                                        </div>
+                                    <!-- .Services-box ends here -->
+                                    <div class="d-flex services-box"> 
+                                        <!-- .Icon ends here -->
                                         <div class="service-content">
-                                            <h4>郑老师的WX</h4>
+                                            <h4>@郑老师的WX</h4>
                                             <p>
                                                 Click Here.<br>  <strong>Connect Me</strong>
                                             </p>
                                         </div>
+                                        <!-- .Service-content ends here -->
                                     </div>
+                                    <!-- .Services-box ends here -->
                                 </div>
+                                <!-- .Col ends here -->
                             </div>
+                            <!-- .Row ends here -->
+                        <!-- .Container ends here -->
                     </div>
+                    <!-- .Services ends here -->
                 </section>
+        <!-- news -->
        <div class="news" id="news">
-        <div class="text-left">
-            <h3 class="w3_head mb-5">Recent Photos</h3>
-        </div>
-            <div class="row news-grids">
-                <div class="col-lg-6 news-grids-left">
-                    <div class="news_top">
-                        <img src="/friend/index/g1.jpg" alt="news image" class="img-fluid">
-                        <h4>Nulla pellentesque</h4>
-                        <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-grids-middle">
-                    <div class="news_top">
-                        <img src="/friend/index/g8.jpg" alt="news image" class="img-fluid">
-                        <h4>Nulla pellentesque</h4>
-                        <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-grids-right">
-                    <div class="news_top">
-                        <img src="/friend/index/g9.jpg" alt="news image" class="img-fluid">
-                        <h4>Nulla pellentesque</h4>
-                        <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-grids-right">
-                    <div class="news_top">
-                        <img src="/friend/index/g10.jpg" alt="news image" class="img-fluid">
-                        <h4>Nulla pellentesque</h4>
-                        <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-grids-right">
-                    <div class="news_top">
-                        <img src="/friend/index/g11.jpg" alt="news image" class="img-fluid">
-                        <h4>Nulla pellentesque</h4>
-                        <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
-                    </div>
-                </div>
-                <div class="col-lg-6 news-grids-right">
-                    <div class="news_top">
-                        <img src="/friend/index/g12.jpg" alt="news image" class="img-fluid">
-                        <h4>Nulla pellentesque</h4>
-                        <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
-                    </div>
-                </div>
+            <div class="text-left">
+                <h3 class="w3_head mb-5">Recent Photos</h3>
             </div>
-            <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#about" role="button">Learn More</a>            
+                <div class="row news-grids">
+                    <div class="col-lg-6 news-grids-left">
+                        <div class="news_top">
+                            <img src="images/g1.jpg" alt="news image" class="img-fluid">
+                            <h4>沈子扬 [ShenZiYang]</h4>
+                            <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 news-grids-middle">
+                        <div class="news_top">
+                            <img src="images/g8.jpg" alt="news image" class="img-fluid">
+                            <h4>张泽霖 [ZhangZeLin]</h4>
+                            <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 news-grids-right">
+                        <div class="news_top">
+                            <img src="images/g9.jpg" alt="news image" class="img-fluid">
+                            <h4>谢焕彬 [XieHuanBin]</h4>
+                            <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 news-grids-right">
+                        <div class="news_top">
+                            <img src="images/g10.jpg" alt="news image" class="img-fluid">
+                            <h4>王一枭 [WangYiXiao]</h4>
+                            <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 news-grids-right">
+                        <div class="news_top">
+                            <img src="images/g11.jpg" alt="news image" class="img-fluid">
+                            <h4>沈子扬 [ShenZiYang]</h4>
+                            <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 news-grids-right">
+                        <div class="news_top">
+                            <img src="images/g12.jpg" alt="news image" class="img-fluid">
+                            <h4>沈子扬 [ShenZiYang]</h4>
+                            <p class="newsp">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr" href="#about" role="button">Learn More About Shen Zi Yang</a>            
         </div>
+<!-- contact -->
      <section class="wedo" id="contact">
             <h3 class="w3_head mb-5">Get In Touch </h3>
            <p class="banp mt-5"> 如果你们看到这个网站之后想打我(逃~),下面是Email发送区,这是我的联系方式:XXXXXXXX</p>
@@ -237,7 +255,7 @@
                             <div class="col-sm-6">
                                 <input type="email" name="Email" placeholder="Email" required>
                             </div>
-                        </div>            
+                        </div>    
                             <textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required>Message...</textarea>
                             <input type="submit" class="btn" value="Send Message">
                     </form>
@@ -247,16 +265,16 @@
                     <ul class="footer-bottom-list">
                             <li>
                                 <span class="fa fa-map-marker"></span> 长安区<br>
-                                <span> 中国,陕西西安 </span>                
+                                <span> 中国,陕西西安 </span>                                
                             </li>
                             <li>
                                 <span class="fa fa-envelope"></span>
                                 <a href="mailto:name@example.com"> mail@XXXXXXXX.com</a>
                             </li>
                             <li>
-                                <span class="fa fa-phone"></span> +143 367 436 2049 </li>
+                                <span class="fa fa-phone"></span> +XXX XXX XXX XX </li>
                             <li>
-                                <span class="fa fa-fax"></span> +166 367 808 5055 </li>
+                                <span class="fa fa-fax"></span> +XXX XXX XXX XX </li>
                             <li>
                                 <span class="fa fa-globe"></span>
                                 <a href="#"> www.websitename.com</a>
