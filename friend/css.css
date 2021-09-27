@@ -1,18 +1,18 @@
 body {
-	font-family:sans-serif;
-	background:#fff;
-    margin:0;
+	font-family: sans-serif;
+	background:#3d4449;
+    margin: 0;
 }
 
 body a,
 .slider-info a {
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-	-ms-transition:0.5s all;
-	text-decoration:none;
-	outline:none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	text-decoration: none;
+	outline: none;
 }
 
 h1,
@@ -22,72 +22,82 @@ h4,
 h5,
 h6 {
 	margin:0;
-	font-family:'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 p {
     margin:0;
-    color:#777;
-    font-size:16px;
-    line-height:1.8;
-    letter-spacing:1px;
+    color: #777;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 1px;
 }
 ul {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 
 ul {
-	list-style-type:none;
+	list-style-type: none;
 }
 
 body a:hover {
-	text-decoration:none;
+	text-decoration: none;
 }
 
 body a:focus {
-	outline:none;
-	text-decoration:none;
+	outline: none;
+	text-decoration: none;
 }
 
 /*-- bottom-to-top --*/
 /*-- header --*/
 .navimg {
-    border-radius:50%;
-    margin:0 auto;
-    border:4px solid rgba(255, 255, 255, 0.39);
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid rgba(255, 255, 255, 0.39);
 }
 /* CSS Document */
 
 header {
-    position:relative;
-    z-index:9;
-    width:100%;
+    position: relative;
+    z-index: 9;
+    width: 100%;
 }
 
 .toggle,
 [id^=drop] {
-    display:none;
+    display: none;
 }
 
 /* Giving a background-color to the nav container. */
 
 nav {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 
+#logo a {
+    float: left;
+    display: initial;
+    margin: 0;
+    color: #fff;
+}
+
+#logo a span {
+    color: #fff;
+}
 nav.mnu {
-    text-align:right;
+    text-align: right;
 }
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
 nav:after {
-    content:"";
-    display:table;
-    clear:both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Removing padding, margin and "list-style" from the "ul",
@@ -96,100 +106,82 @@ nav:after {
 nav ul {
     padding:0;
     margin:0;
-    list-style:none;
-    position:relative;
+    list-style: none;
+    position: relative;
 }
 
 /* Positioning the navigation items inline */
 
+nav ul li {
+    margin: 0px;
+    display: block;
+}
 
 /* Styling the links */
 
 nav a {
-   color:#fff;
-	font-weight:600;
-	letter-spacing:1px;
-	text-transform:uppercase;
-	font-size:15px;
-    transition:0.5s all;
-    -webkit-transition:0.5s all;
-    -moz-transition:0.5s all;
-    -o-transition:0.5s all;
-    -ms-transition:0.5s all;
+   color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 15px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
 }
 
 
 nav ul li ul li:hover {
-    background:#f8f9fa;
+    background: #f8f9fa;
 }
 
 /* Background color change on Hover */
 
 nav a:hover {
-    color:#00a8e0;
+    color: #00a8e0;
 }
 
 .menu li.active a {
-    color:#00a8e0;
+    color: #00a8e0;
 }
 
-/* Hide Dropdowns by Default
- * and giving it a position of absolute */
 
 nav ul ul {
-    display:none;
-    position:absolute;
-    /* has to be the same number as the "line-height" of "nav a" */
-    top:30px;
-    background:#fff;
-    padding:10px;
+    display: none;
+    position: absolute;
+    top: 30px;
+    background: #fff;
+    padding: 10px;
 }
 
-/* Display Dropdowns on Hover */
-
 nav ul li:hover > ul {
-    display:inherit;
+    display: inherit;
 }
 
 /* Fisrt Tier Dropdown */
 
 nav ul ul li {
-    width:170px;
-    float:none;
-    display:list-item;
-    position:relative;
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
 }
 
 nav ul ul li a {
-    color:#333;
-    padding:5px 10px;
-    display:block;
+    color: #333;
+    padding: 5px 10px;
+    display: block;
 }
 
-/* Second, Third and more Tiers	
- * We move the 2nd and 3rd etc tier dropdowns to the left
- * by the amount of the width of the first tier.
-*/
 
 nav ul ul ul li {
-    position:relative;
-    top:-60px;
+    position: relative;
+    top: -60px;
     /* has to be the same number as the "width" of "nav ul ul li" */
-    left:170px;
+    left: 170px;
 }
-
-
-/* Change ' +' in order to change the Dropdown symbol */
-
-li > a:only-child:after {
-    content:'';
-}
-
-
-/* Media Queries
---------------------------------------------- */
-
-
 
 .sidenav {
 	height: 100%;
@@ -198,7 +190,7 @@ li > a:only-child:after {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background: url(index/banner-1.jpg) no-repeat bottom;
+	background: url(https://z3.ax1x.com/2021/09/27/4Ra4P0.png   ) no-repeat bottom;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -208,34 +200,6 @@ li > a:only-child:after {
 	padding-top: 20px;
 }
 
-section#about {
-	margin: 1em;
-	padding: 1em;
-	border: 1px solid #dacfcf;
-}
-
-.navbar-light .navbar-brand {
-	padding: 6px 15px;
-	line-height: 36px;
-	text-decoration: none;
-	font-size: 29px;
-	color: #000;
-	text-transform: uppercase;
-	display: block;
-	letter-spacing: 1px;
-	font-weight: 300;
-	background: #fff;
-	border: 4px solid rgba(103, 58, 183, 0.43);
-	text-align: center;
-}
-
-.navbar-expand-lg .navbar-nav li a {
-	color: #000;
-	font-weight: 600;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-size: 15px;
-}
 
 header {
 	padding-top: 2em;
@@ -245,77 +209,79 @@ header {
 	margin: 1em 0 0;
 }
 
-.navbar-light .navbar-nav .show>.nav-link,
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link.active {
-	color: #fff;
-}
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: #fff;
-}
-.navbar-light .navbar-nav .nav-link {
-	color: rgba(255, 255, 255, 0.35);
-}
-.serv_link {
-    color: #000;
-    font-weight: 600;
-}
 .main {
 	margin-left: 500px;
 }
 
 
 .sidenav h1 {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 1.35em;
-    line-height: 1.75em;
+    margin-top: 20px;
+    color:#19adf2;
+    font-size: 25px;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
     margin-top: 1em;
-    font-weight: 400;
+    font-weight: 550;
 }
 .side_top {
     text-align: right;
     padding: 6em 2.5em 0;
 }
+/* 有用 */
 .banner-text-w3ls {
     padding: 8em 4em 4em 4em;
 }
 .banner-text-w3ls h2 {
-    color: #787878;
-    font-size: 2em;
-    letter-spacing: 2px;
+    font-family: "Arial";
+    margin-top: 10px;
+    color:#30c39e;
+    font-size: 25px;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
+    margin-top: 0px;
     font-weight: 400;
 }
-p.banp {
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #999;
-    font-weight: 400;
+
+.banner-text-w3ls .banp {
+    margin-top: 10px;
+    color:#30c39e;
+    font-size: 14px;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
+    margin-top: 10px;
+    font-family:"宋体";
+    margin-bottom: 20px;
+    font-weight: 500;
 }
-p.newsp {
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #999;
-    font-weight: 400;
+
+.wedo .banp{
+    color:#42a5f6;
+    font-size: 20px;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
+    margin-bottom: 20px;
+    font-family:"宋体";
 }
+
+
 .agile-link-bnr {
     padding: 10px 40px;
-    color: #999;
+    color:aqua;
     font-weight: 600;
     letter-spacing: 2px;
     font-size: 16px;
     text-transform: capitalize;
     background: none;
-    border: 1px solid #999;
+    border: 1px solid aqua;
 }
 .agile-link-bnr:hover {
-    background:#e7746f;
-    border: 1px solid #e7746f;
+    background:#30c39e;
+    border: 1px solid #30c39e;
 }
+
+
 .news {
     padding: 4em 4em;
-    background: #ffffff;
+    background:#3d4449 ;
     border-top: solid 2px #efefef;
+    border-color:#30c39e;
+    border-width: 3px;
 }
 .newsgrid1 {
     padding: 0;
@@ -330,14 +296,29 @@ p.newsp {
 .gri3 {
     background:  #1564c0;
 }
+.news_top p{
+    color:deepskyblue;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
+    font-family: "Arial";
+    font-weight: 500px;
+    font-size: 15px;
+}
+
+.btn{
+    margin-top: 60px;
+}
 
 .news-grids h4 {
     letter-spacing: 2px;
-    color: #787878;
-    font-weight: 400;
+    color:lightskyblue;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
+    font-family: "宋体";
+    font-weight: 580;
+    font-size: 25px;
     padding: 1em 0 1em 0;
     font-size: 1.3em;
     text-align: left;
+    
 }
 .news-grids-right {
     margin-top: 3em;
@@ -348,13 +329,38 @@ p.newsp {
 .wthree-inner-sec.services-bg {
     background: rgba(255, 255, 255, 0.12);
 }
-h2.w3_head, h3.w3_head {
-    font-weight: 400;
-    color: #787878;
-    font-size: 1.5em;
+
+/*----------- recentphotos↑------ */
+
+h3.w3_head {
+
     letter-spacing: 0.075em;
     line-height: 1.35em;
+
+    color:#30c39e;
+    font-size: 25px;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
+    font-family:"Arial";
+    margin-bottom: 50px;
+    font-weight: 500;
 }
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+.row .col-md-6{
+    margin-top: 30px;
+  }
+
+
+
 p.main_p {
     font-size: 1.4em;
     line-height: 1.8em;
@@ -362,31 +368,16 @@ p.main_p {
     color: #777;
     font-weight: 300;
 }
-section.slide-wrapper-1 {
-    padding: 5em 8em;
-    text-align: center;
-    background: #fff;
-	box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.17);
-}
-.news_top {
-    padding-right: 5em;
-}
-p.iner {
-    font-size: 1.3em;
-    line-height: 1.8em;
-    letter-spacing: 0.075em;
-    color: #777;
-    font-weight: 300;
-}
-/* contact */
+
 .gal-img img {
     border-radius: 5px;
 }
 .wedo {
     padding: 4em 4em;
-    background: #ffffff;
+    background:#3d4449 ;
     text-align: left;
     border-top: solid 2px #efefef;
+    border-color: #30c39e;
 }
 .contact_grid_right input[type="text"], .contact_grid_right input[type="email"], .contact_grid_right textarea {
     outline: none;
@@ -410,7 +401,7 @@ p.iner {
     min-height: 13em;
     margin: 1em 0em;
     resize: none;
-}
+} 
 
 .contact_grid_right input[type="submit"] {
     outline: none;
@@ -434,33 +425,9 @@ p.iner {
     background-color:#e7746f;
 }
 
-.follow {
-    padding: 2em 0;
-    margin: 5em 0;
-    border-top: 1px solid #dcdcdc;
-    border-bottom: 1px solid #dcdcdc;
-}
-ul.social_section_1info li {
-    display: inline-block;
-}
-ul.social_section_1info li a {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    display: block;
-    line-height: 47px;
-    border-radius: 5px;
-    border: 1px solid #484848;
-    background: #272727;
-}
-ul.social_section_1info a {
-    color: #999;
-    margin-right: 30px;
-    font-size: 22px;
-}
-ul.social_section_1info a:hover {
-    color: #fff;
-}
+
+
+
 .cpy-right p{
 	color:#999;
 }
@@ -475,99 +442,7 @@ ul.social_section_1info a:hover {
     border-top: solid 2px #efefef;
     margin: 4em 0 0 0;
 }
-#success-message {
-	opacity: 0;
-}
 
-.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
-	padding: 0 20% 0 20%;
-}
-
-.form-title {
-	padding: 25px;
-	font-size: 30px;
-	font-weight: 300;
-}
-
-.form-group .form-control {
-	-webkit-box-shadow: none;
-	border-bottom: 1px;
-	border-style: none none solid none;
-	border-color:#ffd708;
-}
-
-.form-group .form-control:focus {
-	box-shadow: none;
-	border-width: 0 0 2px 0;
-	border-color: #000;
-}
-
-textarea {
-	resize: none;
-}
-
-.btn-mod.btn-large {
-	height: auto;
-	padding: 13px 52px;
-	font-size: 15px;
-}
-
-.btn-mod.btn-border {
-	color: #000000;
-	border: 1px solid #000000;
-	background: transparent;
-}
-
-.btn-mod,
-a.btn-mod {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 4px 13px;
-	color: #fff;
-	background: rgba(34, 34, 34, .9);
-	border: 1px solid transparent;
-	font-size: 11px;
-	font-weight: 400;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 2px;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	-webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-	-moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-	-o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-	-ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-	transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-}
-
-.btn-mod.btn-border:hover,
-.btn-mod.btn-border:active,
-.btn-mod.btn-border:focus,
-.btn-mod.btn-border:active:focus {
-	color: #fff;
-	border-color: #000;
-	background: #000;
-	outline: none;
-}
-
-
-
-form#contact-form label {
-	color: #ea4335;
-}
-
-label {
-	color: #000 !important;
-	font-weight: 600;
-	letter-spacing: 0.5px;
-}
-
-/* //contact */
 ul.footer-bottom-list li {
     list-style: none;
     margin-bottom: 1em;
@@ -586,24 +461,16 @@ ul.footer-bottom-list li a {
 .contact_grid_left {
     padding-left: 5em;
 }
-/* contact */
 
-.form-control {
-	background-color: #e2e2e2;
-	border: none;
-}
-
-.map iframe {
-	width: 100%;
-	border: 7px solid #e4e4e4;
-	min-height: 500px;
-}
-
-/* //contact */
 /*-- gallery --*/
 section.gallery {
-    background: #f0f4f4;
+    background:#3d4449;
+    border-color:#30c39e;
+    border-width: 3px;
 }
+
+
+
 
 /*-- //gallery --*/
 /*-- popup --*/
@@ -627,7 +494,7 @@ section.gallery {
 }
 
 .popup {
-    background: #fff;
+    background:#333;
     border-radius: 5px;
     width: 35%;
     position: relative;
@@ -639,6 +506,7 @@ section.gallery {
     font-size: 15px;
     color: #666;
     letter-spacing: .5px;
+    
     line-height: 30px;
 }
 
@@ -663,9 +531,6 @@ section.gallery {
     color: #30c39e;
 }
 
-
-/*-- //popup --*/
-/*-- popup --*/
 
 .overlay {
   position: absolute;
@@ -741,37 +606,6 @@ section.gallery {
     border-top: solid 2px #efefef;
 }
 
-.wthree-inner-sec.services-bg {
-    background: rgba(255, 255, 255, 0.12);
-}
-
-.services-box {
-    margin-bottom: 40px;
-    padding: 20px 0;
-    transition: all 1s;
-    -moz-transition: all 1s;
-    /* Firefox 4 */
-    -webkit-transition: all 1s;
-    /* Safari and Chrome */
-    -o-transition: all 1s;
-    /* Opera */
-}
-
-.services-box:hover {
-    transition: all 1s;
-    -moz-transition: all 1s;
-    /* Firefox 4 */
-    -webkit-transition: all 1s;
-    /* Safari and Chrome */
-    -o-transition: all 1s;
-    /* Opera */
-}
-
-.services-box:hover span {
-    background: transparent;
-    border-radius: 100px;
-    color: #e7746f;
-}
 
 .icon span {
     width: 100px;
@@ -788,6 +622,9 @@ section.gallery {
     -o-transition: all 1s;
 }
 
+
+
+/* -----------What You can get about-------- */
 .service-content {
     margin-left: 1em;
     text-align: left;
@@ -795,10 +632,12 @@ section.gallery {
 
 .service-content h4, .service-content h2 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 35px;
     margin-bottom: 0.5em;
-    color: #3d4449;
+    color:#19adf2;
+    margin-top: 30px;
+    text-shadow: 0 0 8px rgba(255,255,255,.55);
 }
 .service-txt h5 {
     text-transform: capitalize;
@@ -818,13 +657,6 @@ section.gallery {
 section.slide-wrapper {
     padding: 4em 4em;
 }
-/* //services */
-/* -- Responsive code -- */
-
-
-
-/* -- //Responsive code -- */
-
 
 .container-fluid li{
     width: 100%;
@@ -833,4 +665,4 @@ section.slide-wrapper {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10px;
-  }
+  } 
