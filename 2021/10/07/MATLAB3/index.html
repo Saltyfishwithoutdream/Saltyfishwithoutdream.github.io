@@ -293,7 +293,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      411 字
+      1.2k 字
     </span>
   
 
@@ -303,7 +303,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      16
        分钟
     </span>
   
@@ -350,7 +350,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：9 分钟前
+                  本文最后更新于：6 天前
                 
               </p>
             
@@ -362,31 +362,103 @@
 <style>
   /* 设置整个页面的字体 */
   /* 只设置 markdown 字体 */
+   html, body,  {
+  }
   .markdown-body {
-    font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;
-    font-size: 18px;
+    font-family: KaiTi,"Arial",Georgia, sans, serif;
+    font-size: 20px;
   }
 </style>
 
-<h2 id="1-符号变量："><a href="#1-符号变量：" class="headerlink" title="1    符号变量："></a>1    符号变量：</h2><h3 id="1-1-定义符号变量"><a href="#1-1-定义符号变量" class="headerlink" title="1.1    定义符号变量"></a>1.1    定义符号变量</h3><p><strong>syms x       【syms作用为定义一个符号变量】</strong><br>定义一个<strong>符号变量x</strong>用于进行公式的化简和计算,后续可以做一些符号操作,如:</p>
+<h2 id="1-符号变量："><a href="#1-符号变量：" class="headerlink" title="1    符号变量："></a>1    符号变量：</h2><h3 id="1-1-定义符号变量"><a href="#1-1-定义符号变量" class="headerlink" title="1.1    定义符号变量"></a>1.1    定义符号变量</h3><p><strong>syms x       【syms作用为定义一个符号变量】</strong></p>
+<p>定义一个<strong>符号变量x</strong></p>
+<p>用于进行公式的化简和计算,后续可以做一些符号操作如: $ y=x^2+2x+1 $</p>
+<h3 id="1-2-符号变量的微分"><a href="#1-2-符号变量的微分" class="headerlink" title="1.2    符号变量的微分"></a>1.2    符号变量的微分</h3><h4 id="1-2-1-符号函数的极限"><a href="#1-2-1-符号函数的极限" class="headerlink" title="1.2.1 符号函数的极限"></a>1.2.1 符号函数的极限</h4><p>求符号函数极限的命令为limit，其调用格式为:</p>
 <script type="math/tex; mode=display">
-y=x^2+2x+1</script><h3 id="1-2-符号变量的微分"><a href="#1-2-符号变量的微分" class="headerlink" title="1.2    符号变量的微分"></a>1.2    符号变量的微分</h3><p>diff(p,x)                    %p对x求导</p>
-<h3 id="1-3-符号变量的积分"><a href="#1-3-符号变量的积分" class="headerlink" title="1.3    符号变量的积分"></a>1.3    符号变量的积分</h3><p>符号函数的积分通过<strong>int</strong>函数实现</p>
-<h4 id="1-3-1-不定积分"><a href="#1-3-1-不定积分" class="headerlink" title="1.3.1 不定积分"></a>1.3.1 不定积分</h4><p> 调用格式为：  <strong>int(f,x)</strong>  【求函数f对变量x的不定积分】</p>
+limit(f,x,a)</script><ul>
+<li>即求函数f关于变量x在a点的极限。</li>
+<li>若x省略，则采用系统默认的自变量。a的默认值为0.</li>
+</ul>
+<p>limit函数的另一种功能是求单边极限，其调用格式为:</p>
+<ol>
+<li><p><strong>limit(f,x,a, right’)</strong></p>
+</li>
+<li><p><strong>limit(f,x,a,’left’)</strong></p>
+</li>
+</ol>
+<p>eg: 求下列极限</p>
+<script type="math/tex; mode=display">
+\lim_{n \to \infty} (1+\frac{1}{n})^n</script><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs matlab">程序如下:<br>syms n;<br>f=(<span class="hljs-number">1</span>+<span class="hljs-number">1</span>/n)^n;<br>&gt;&gt;limit(f,n,<span class="hljs-built_in">inf</span>)<br><span class="hljs-built_in">ans</span> = <span class="hljs-built_in">exp</span>(<span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure>
+<h4 id="1-2-2-符号函数的导数"><a href="#1-2-2-符号函数的导数" class="headerlink" title="1.2.2 符号函数的导数"></a>1.2.2 符号函数的导数</h4><p>MATLAB中的求导函数为:</p>
+<script type="math/tex; mode=display">
+diff(f,x,n)</script><ul>
+<li><p>即求函数f关于变量x的n阶导数。</p>
+</li>
+<li><p>参数x的用法同求极限函数limit，可以缺省，默认值与limit相同，n的默认值是1。</p>
+</li>
+</ul>
+<p>eg：求下列函数的导数</p>
+<script type="math/tex; mode=display">
+z=\frac{xe^y}{y^2},求解z_{x}^{'},z_{y}^{'}</script><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs sql">程序如下:<br><span class="hljs-operator">&gt;&gt;</span>g<span class="hljs-operator">=</span>x<span class="hljs-operator">*</span><span class="hljs-built_in">exp</span>(y)<span class="hljs-operator">/</span>y<span class="hljs-operator">^</span><span class="hljs-number">2</span>;<br><span class="hljs-operator">&gt;&gt;</span>diff(g,x)<br>ans <span class="hljs-operator">=</span><br><span class="hljs-built_in">exp</span>(y)<span class="hljs-operator">/</span>y<span class="hljs-operator">^</span><span class="hljs-number">2</span><br><br><span class="hljs-operator">&gt;&gt;</span>diff(g,y)<br>ans <span class="hljs-operator">=</span><br>(x<span class="hljs-operator">*</span><span class="hljs-built_in">exp</span>(y))<span class="hljs-operator">/</span>y<span class="hljs-operator">^</span><span class="hljs-number">2</span><span class="hljs-operator">-</span> (<span class="hljs-number">2</span><span class="hljs-operator">*</span>x<span class="hljs-operator">*</span><span class="hljs-built_in">exp</span>(y))<span class="hljs-operator">/</span>y<span class="hljs-operator">^</span><span class="hljs-number">3</span><br></code></pre></td></tr></table></figure>
+<h3 id="1-3-符号变量的积分"><a href="#1-3-符号变量的积分" class="headerlink" title="1.3    符号变量的积分"></a>1.3    符号变量的积分</h3><h4 id="1-3-1-不定积分"><a href="#1-3-1-不定积分" class="headerlink" title="1.3.1 不定积分"></a>1.3.1 不定积分</h4><p>符号函数的积分通过<strong>int</strong>函数实现</p>
+<p> 调用格式为：  <strong>int(f,x)</strong>  【求函数f对变量x的不定积分】</p>
 <p>eg：求下列不定积分</p>
 <script type="math/tex; mode=display">
-\int (3-x^2)^3 dx</script><p>这是一个行内公式插入的测试：$ y=x^2+1 $</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs matlab">syms x;<br>f=(<span class="hljs-number">3</span>-x^<span class="hljs-number">2</span>)^<span class="hljs-number">3</span>;<br>&gt;&gt;int(f)<br><span class="hljs-built_in">ans</span>=...<br></code></pre></td></tr></table></figure>
+\int (3-x^2)^3 dx</script><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs matlab">程序如下:<br>syms x;<br>f=(<span class="hljs-number">3</span>-x^<span class="hljs-number">2</span>)^<span class="hljs-number">3</span>;<br>&gt;&gt;int(f)<br><span class="hljs-built_in">ans</span>=...<br></code></pre></td></tr></table></figure>
 <h4 id="1-3-2-定积分"><a href="#1-3-2-定积分" class="headerlink" title="1.3.2 定积分"></a>1.3.2 定积分</h4><p>调用格式为：  <strong>int(f,x,a,b)</strong> 【其中a,b分别代表定积分的下限和上限】</p>
 <p>eg：求如下定积分</p>
 <script type="math/tex; mode=display">
-\int_{-\infty}^{+\infty} \frac{1}{1+x^2} dx</script><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs matlab">syms x;<br>&gt;&gt;int(<span class="hljs-number">1</span>/(<span class="hljs-number">1</span>+x^<span class="hljs-number">2</span>),-<span class="hljs-built_in">inf</span>,<span class="hljs-built_in">inf</span>)<br><span class="hljs-built_in">ans</span>= <span class="hljs-built_in">pi</span><br></code></pre></td></tr></table></figure>
+\int_{-\infty}^{+\infty} \frac{1}{1+x^2} dx</script><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs matlab">程序如下:<br>syms x;<br>&gt;&gt;int(<span class="hljs-number">1</span>/(<span class="hljs-number">1</span>+x^<span class="hljs-number">2</span>),-<span class="hljs-built_in">inf</span>,<span class="hljs-built_in">inf</span>)<br><span class="hljs-built_in">ans</span>= <span class="hljs-built_in">pi</span><br></code></pre></td></tr></table></figure>
 <h3 id="1-4-级数"><a href="#1-4-级数" class="headerlink" title="1.4    级数"></a>1.4    级数</h3><h4 id="1-4-1-级数求和"><a href="#1-4-1-级数求和" class="headerlink" title="1.4.1 级数求和"></a>1.4.1 级数求和</h4><p>求无穷级数的和需要<strong>符号表达式求和函数symsun()</strong>,调用格式为：</p>
 <script type="math/tex; mode=display">
-symsum(s,v,n,m)</script><p>其中，s表示一个级数的通项，是一个符号表达式。v是求和变量,v省略时使用系统的默认变量。n和m是求和变量v的初值和末值。</p>
+symsum(s,v,n,m)</script><ul>
+<li><strong>s表示一个级数的通项，</strong>是一个符号表达式。</li>
+<li>v是求和变量,v省略时使用系统的默认变量。</li>
+<li>n和m是求和变量v的初值和末值。</li>
+</ul>
 <p>eg：求如下无穷级数的和</p>
 <script type="math/tex; mode=display">
-S=\sum_{n=1}^{\infty} (-1)^{n+1} \frac{1}{n}</script><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs matlab">syms n;<br>s=symsum((<span class="hljs-number">-1</span>)^(n+<span class="hljs-number">1</span>)/n,<span class="hljs-number">1</span>,<span class="hljs-built_in">inf</span>)<br>&gt;&gt;s<br><span class="hljs-built_in">ans</span> = <span class="hljs-built_in">log</span>(<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure>
+S=\sum_{n=1}^{\infty} (-1)^{n+1} \frac{1}{n}</script><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs matlab">程序如下:<br>syms n;<br>s=symsum((<span class="hljs-number">-1</span>)^(n+<span class="hljs-number">1</span>)/n,<span class="hljs-number">1</span>,<span class="hljs-built_in">inf</span>)<br>&gt;&gt;s<br><span class="hljs-built_in">ans</span> = <span class="hljs-built_in">log</span>(<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure>
+<h4 id="1-4-2-泰勒级数"><a href="#1-4-2-泰勒级数" class="headerlink" title="1.4.2 泰勒级数"></a>1.4.2 泰勒级数</h4><p><strong>taylor( )函数</strong>将函数展开为幂级数。其调用格式为:</p>
+<script type="math/tex; mode=display">
+taylor(f,v,a,Name,Value)</script><ul>
+<li><p><strong>该函数将函数f按变量v在a点展开为泰勒级数</strong>,v省略时按默认规则确定变量, a的默认值是0。</p>
+</li>
+<li><p>Name和Value为选项设置，经常成对使用，前者为选项名，后者为该选项的值。</p>
+</li>
+</ul>
+<p>eg：求f(x)在x=1处的5阶泰勒级数展开式</p>
+<script type="math/tex; mode=display">
+f(x)=\frac{1+x+x^2}{1-x+x^2}</script><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs matlab">程序如下:<br>&gt;&gt;syms x;<br>&gt;&gt;f=(<span class="hljs-number">1</span>+x+x^<span class="hljs-number">2</span>)/(<span class="hljs-number">1</span>-x+x^<span class="hljs-number">2</span>);<br>&gt;&gt;taylor(f,x,<span class="hljs-number">1</span>,<span class="hljs-string">&#x27;Order&#x27;</span>,<span class="hljs-number">6</span>)<br><span class="hljs-built_in">ans</span>=...<br></code></pre></td></tr></table></figure>
+<h3 id="1-5-符号方程的求解"><a href="#1-5-符号方程的求解" class="headerlink" title="1.5 符号方程的求解"></a>1.5 符号方程的求解</h3><h4 id="1-5-1-代数方程符号求解"><a href="#1-5-1-代数方程符号求解" class="headerlink" title="1.5.1 代数方程符号求解"></a>1.5.1 代数方程符号求解</h4><p><strong>solve( )</strong>函数求解代数方程,常用调用格式为：</p>
+<ol>
+<li><strong>solve(s):</strong>求解符号表达式s的代数方程，求解变量为默认变量。</li>
+<li><strong>solve(s,v):</strong>求解符号表达式s的代数方程，求解变量为v。</li>
+<li><strong>solve(s1,s2,… ,sn,v1,v2,…,vn):</strong> 求解符号表达式s1，s2，…，sn组成的代数方程组,求解变量分别为vl，v2，…， vn。</li>
+</ol>
+<p>eg：求解方程 <strong>$ ax^2+bx+c=0 $</strong></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs matlab">程序如下:<br>syms x a b c;<br>solve(a*x^<span class="hljs-number">2</span>+b*x+c==<span class="hljs-number">0</span>)<br>&gt;&gt; <span class="hljs-built_in">ans</span> = ...<br></code></pre></td></tr></table></figure>
+<h4 id="1-5-2常微分方程符号求解"><a href="#1-5-2常微分方程符号求解" class="headerlink" title="1.5.2常微分方程符号求解"></a>1.5.2常微分方程符号求解</h4><p><strong>dsolve( )</strong>求解符号常微分方程,调用格式为:</p>
+<script type="math/tex; mode=display">
+dsolve(e,c,v)</script><ul>
+<li>用于求解常微分方程e在初值条件c下的特解。</li>
+<li>参数v是方程中的自变量，省略时按默认原则处理，若没有给出初值条件c，则求方程的通解。</li>
+</ul>
+<p><strong>dsolve在求常微分方程组时的调用格式为</strong>:</p>
+<script type="math/tex; mode=display">
+dsolve(e1,e2,… ,en,c1,c2,…  ,cn,v)</script><ul>
+<li><p>用于求解常微分方程组el，e2，…，en在初值条件c1，c2，…, cn下的特解</p>
+</li>
+<li><p>若不给出初值条件，则求方程组的通解。v给出求解变量，若没有指定自变量，则采用默认自变量t。</p>
+</li>
+</ul>
+<p>eg：求下列微分方程组的解</p>
+<script type="math/tex; mode=display">
+\left\{\begin{matrix}
+\frac{dx}{dt}=4x-2y
+ \\ 
+ \frac{dy}{dt}=2x-y
+\end{matrix}\right.</script><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs matlab">程序如下:<br>&gt;&gt;syms x y t;<br>&gt;&gt;[x,y]=dsolve(<span class="hljs-string">&#x27;Dx=4*x-2*y&#x27;</span>,<span class="hljs-string">&#x27;Dy=2*x-y&#x27;</span>,t)<br>x=..<br>y=..<br></code></pre></td></tr></table></figure>
 
             </div>
             <hr>
